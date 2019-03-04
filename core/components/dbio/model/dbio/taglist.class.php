@@ -1,2 +1,2 @@
 <?php
-class TagList extends xPDOSimpleObject {}
+class tagList extends xPDOSimpleObject {}

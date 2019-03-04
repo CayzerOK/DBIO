@@ -3,7 +3,6 @@
 $xpdo_meta_map = array (
   'xPDOSimpleObject' => 
   array (
-    0 => 'TagList',
-    1 => 'PostTags',
+    0 => 'tagList',
   ),
 );

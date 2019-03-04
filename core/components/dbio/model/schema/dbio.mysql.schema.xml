@@ -2,20 +2,7 @@
 <model package="dbio" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="dbio"
        version="1.1">
 
-    <object class="TagList" table="dbio_tags" extends="xPDOSimpleObject">
-        <field key="tag_id" dbtype="int" precision="10" phptype="integer" null="false" index="tag"  generated="native" />
-        <field key="content" dbtype="varchar" precision="32" phptype="string" null="false" />
-        <index alias="PRIMARY" name="PRIMARY" primary="true" unique="true">
-            <column key="tag_id" collation="A" null="false" />
-        </index>
+    <object class="tagList" table="dbio_tags" extends="xPDOSimpleObject">
+        <field key="content" dbtype="varchar" precision="255" phptype="string" null="false" />
     </object>
-
-    <object class="PostTags" table="dbio_posts" extends="xPDOSimpleObject">
-        <field key="post_id" dbtype="int" precision="10" phptype="integer" null="false" index="tag"  generated="native" />
-        <field key="description" dbtype="text" phptype="text" null="true" default=""/>
-        <index alias="PRIMARY" name="PRIMARY" primary="true" unique="true">
-            <column key="post_id" collation="A" null="false" />
-        </index>
-    </object>
-
 </model>

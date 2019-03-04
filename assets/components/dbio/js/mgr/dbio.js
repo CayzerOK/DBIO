@@ -1,10 +1,10 @@
-<?
-var DBIO = function(config) {
+var DBIO = function (config) {
     config = config || {};
-    DBIO.superclass.constructor.call(this,config);
+    DBIO.superclass.constructor.call(this, config);
 };
-Ext.extend(DBIO,Ext.Component,{
-    page:{},window:{},grid:{},tree:{},panel:{},combo:{},config: {}
+Ext.extend(DBIO, Ext.Component, {
+    page: {}, window: {}, grid: {}, tree: {}, panel: {}, combo: {}, config: {}, view: {}, utils: {}
 });
-Ext.reg('dbio',DBIO);
-DBIO = new DBIO(); ?>
+Ext.reg('dbio', DBIO);
+
+DBIO = new DBIO();
